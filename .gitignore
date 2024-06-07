@@ -1,0 +1,21 @@
+# Data
+/data
+
+# Junk Files
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
