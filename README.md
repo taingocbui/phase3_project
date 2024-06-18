@@ -44,7 +44,7 @@ Summary of Features in the Dataset
 ## 5. Data Cleaning
 This dataset has no Nan values and duplicated values. However, several features do have perfect correlations. Therefore, I decieded to drop several features which share perfect correlations to eliminate multicollinearity among the features.
 
-![Corr Matrix](https://github.com/taingocbui/phase2_project/blob/main/photos/corr_matrix.png)
+![Corr Matrix](https://github.com/taingocbui/phase3_project/blob/main/photos/corr_matrix.png)
 
 ## 6. Preprocessing Process
 Preprocessing process includes 3 steps:
