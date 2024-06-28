@@ -52,19 +52,19 @@ Preprocessing process includes 4 steps:
 * As most features are normally distributed, they will be normalized with Standard Scaler so that each numerical feature will have mean = 0 and standard deviation = 1. 
 * Finally, SMOTE is used to reduce data imbalance in the target.
 
-![Distribution](https://github.com/taingocbui/phase3_project/blob/main/photos/Distribution.png)
+![Distribution](https://github.com/taingocbui/phase3_project/blob/main/photos/distribution.png)
 
 ## 7. Logistic Regression
 Logistic regression is a classification algorithm, used when the value of the target variable is categorical in nature. It is most commonly used when the data in question has binary output. My base logistic model without any regularization achieves only 44.89% recall rate on the test set. The Area under Curve for ROC is 0.81. Due to its significant low recall rate for both train and test set, no further tuning for this model needed.
 
-![Logistic_ROC](https://github.com/taingocbui/phase3_project/blob/main/photos/Logistic_ROC.png)
+![Logistic_ROC](https://github.com/taingocbui/phase3_project/blob/main/photos/logistic_ROC.png)
 
 ## 8. Decision Tree Classifier
 Decision Tree is a Supervised technique that can be used for both clasissification and regression problems, but is mostly preferred for solving classification problems. It is a tree-structured classifier, where internal nodes represent the features of a dataset, branches represent the decision rules and each leaf node represents the outcome.
 
 My base decision tree model resulted with 78.57% recall rate for test set. However, the model did indicated signs of overfitting due to its 100% recall rate for training set. To address overfitting problem, I tried to regulate the model by introducing new parameters such as max_depth, minimum sample split, or minimum sample leafs. The final decision tree model achieved a 87.13% recall rate for train set, 83.67% for test set and 91.6% for validation set. This final model is pruned with maximum depth set at 3 and minimum samples split set at 0.2. However, the trade off for eliminating overfitting is a lower ROC AUC (0.84 vs. 0.8793 in the base decision tree model)
 
-![DecisionTree_ROC](https://github.com/taingocbui/phase3_project/blob/main/photos/DecisionTree_ROC.png)
+![DecisionTree_ROC](https://github.com/taingocbui/phase3_project/blob/main/photos/decisiontree_ROC.png)
 
 ## 9. Conclusion
 Based on recal rate of test set and validation set, I recommend Decision Tree classifier with maximum depth set = 3 and minimum samples split = 0.2 as the final classification model to SyriaTel stakeholders. This final model achieves my set target of maximizing recall rate and is sensitive to false negative rate.
@@ -76,3 +76,7 @@ On the other hand, the model also list the top 2 most important features includi
 ## 8. Future Works
 To better improve the quality of this report, I will extend this project using Random Forest Classifier model and Support Vector Machine model to possibly achieve a better accuracy and recall rate.
 
+## 9. Links to Works
+![Notebook](https://github.com/taingocbui/phase3_project/blob/main/project3.ipynb)
+![Presentation Slides](https://github.com/taingocbui/phase3_project/blob/main/presentation.pdf)
+![gitignore file](https://github.com/taingocbui/phase3_project/blob/main/.gitignore)
