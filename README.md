@@ -77,6 +77,6 @@ On the other hand, the model also list the top 2 most important features includi
 To better improve the quality of this report, I will extend this project using Random Forest Classifier model and Support Vector Machine model to possibly achieve a better accuracy and recall rate.
 
 ## 9. Links to Works
-![Notebook](https://github.com/taingocbui/phase3_project/blob/main/project3.ipynb)
-![Presentation Slides](https://github.com/taingocbui/phase3_project/blob/main/presentation.pdf)
-![gitignore file](https://github.com/taingocbui/phase3_project/blob/main/.gitignore)
+- [Notebook](https://github.com/taingocbui/phase3_project/blob/main/project3.ipynb)
+- [Presentation Slides](https://github.com/taingocbui/phase3_project/blob/main/presentation.pdf)
+- [gitignore file](https://github.com/taingocbui/phase3_project/blob/main/.gitignore)
